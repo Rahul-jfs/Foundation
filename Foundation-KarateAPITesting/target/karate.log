@@ -1,0 +1,41 @@
+22:15:15.364 [main] ERROR com.intuit.karate - classpath:features/createToken.feature:3
+* def body = read("src/test/resources/json/createToken.json")
+js failed:
+>>>>
+01: read("src/test/resources/json/createToken.json")
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\USTModule2\Foundation-KarateAPITesting\target\test-classes\features\src\test\resources\json\createToken.json (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+classpath:features/createToken.feature:3
+22:17:03.815 [main] ERROR com.intuit.karate - src/test/resources/features/createToken.feature:10
+Then status 200
+Cannot invoke "com.intuit.karate.http.Response.getStatus()" because "this.response" is null
+src/test/resources/features/createToken.feature:10
+22:17:04.414 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/features/createToken.feature
+22:18:52.635 [main] ERROR com.intuit.karate - classpath:features/createToken.feature:10
+Then status 200
+Cannot invoke "com.intuit.karate.http.Response.getStatus()" because "this.response" is null
+classpath:features/createToken.feature:10
+22:20:00.706 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 2087 milliseconds for url: https://restful-booker.herokuapp.com/auth
+22:20:00.709 [main] ERROR com.intuit.karate - classpath:features/createToken.feature:10
+And method post
+http call failed after 2087 milliseconds for url: https://restful-booker.herokuapp.com/auth
+classpath:features/createToken.feature:10
+22:20:13.592 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1722790213590
+22:20:13.617 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 4 - ^verify user is able to create a token$
+22:20:16.072 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1525 milliseconds for url: https://restful-booker.herokuapp.com/auth
+22:20:16.073 [main] ERROR com.intuit.karate - src/test/resources/features/createToken.feature:10
+And method post
+http call failed after 1525 milliseconds for url: https://restful-booker.herokuapp.com/auth
+src/test/resources/features/createToken.feature:10
+22:20:16.789 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/features/createToken.feature
+09:19:09.597 [main] INFO  com.intuit.karate - [print] {
+  "token": "e033b1db6cc3ec2"
+}
+ 
